@@ -54,7 +54,6 @@ export function filterPersons<T extends PersonType>(
         });
 }
 
-// Filter users by studentNumber instead of age
 export const usersWithNumber = filterPersons(persons, 'user', { studentNumber: 224018 });
 export const adminsOfAge23 = filterPersons(persons, 'admin', { age: 23 });
 
